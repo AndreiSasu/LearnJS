@@ -16,6 +16,20 @@ exports.author_list = function (req, res, next) {
 
 };
 
+// Display list of all Authors
+exports.search_author = function (req, res, next) {
+    // Author.find()
+    //     .sort([['family_name', 'ascending']])
+    //     .exec(function (err, list_authors) {
+    //         if (err) {
+    //             return next(err);
+    //         }
+    //         //Successful, so render
+    //         res.render('author_list', {title: 'Author List', author_list: list_authors});
+    //     });
+    res.end(req.query.key);
+};
+
 // Display detail page for a specific Author
 exports.author_detail = function (req, res, next) {
 

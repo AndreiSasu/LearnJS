@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('input.typeahead').typeahead({
-        name: 'countries',
-        remote: '/search?key=%QUERY',
+        name: 'authors',
+        remote: '/catalog/search?key=%QUERY',
         limit: 10
     });
 });
